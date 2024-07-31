@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Chat Interface</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ECE5DD;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .chat-container {
+            border: 1px solid #ccc;
+            width: 350px;
+            height: 600px;
+            background-color: #fff;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .header {
+            background-color: #075E54;
+            color: white;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .header img {
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .header .profile-name {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .chat-messages {
+            flex: 1;
+            padding: 10px;
+            overflow-y: scroll;
+            background-color: #ECE5DD;
+        }
+
+        .message {
+            max-width: 80%;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            position: relative;
+            word-wrap: break-word;
+        }
+
+        .message.sent {
+            background-color: #DCF8C6;
+            align-self: flex-end;
+            border-top-right-radius: 0;
+        }
+
+        .message.received {
+            background-color: #fff;
+            align-self: flex-start;
+            border-top-left-radius: 0;
+        }
+
+        .footer {
+            padding: 10px;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            border-top: 1px solid #ccc;
+        }
+
+        .footer input {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 20px;
+            background-color: #f0f0f0;
+        }
+
+        .footer button {
+            background-color: #075E54;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 50%;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="header">
+            <img src="https://via.placeholder.com/40" alt="Profile Picture">
+            <div class="profile-name">Virat</div>
+        </div>
+
+        <div class="chat-messages">
+            <div class="message received">
+                Rohit! We did it!
+            </div>
+            <div class="message sent">
+                Yes, Virat! World Champions again! What a feeling!
+            </div>
+            <div class="message received">
+                Rohit! We did it!
+            </div>
+            <div class="message sent">
+                Yes, Virat! World Champions again! What a feeling!
+            </div>
+            <div class="message received">
+                Rohit! We did it!
+            </div>
+            <div class="message sent">
+                Yes, Virat! World Champions again! What a feeling!
+            </div>
+            <div class="message received">
+                Rohit! We did it!
+            </div>
+            <div class="message sent">
+                Yes, Virat! World Champions again! What a feeling!
+            </div>
+            <div class="message received">
+                Rohit! We did it!
+            </div>
+            <div class="message sent">
+                Yes, Virat! World Champions again! What a feeling!
+            </div>
+            <div class="message received">
+                Rohit! We did it!
+            </div>
+            <div class="message sent">
+                Yes, Virat! World Champions again! What a feeling!
+            </div>
+        </div>
+
+        <div class="footer">
+            <input type="text" placeholder="Type a message">
+            <button>&#9658;</button>
+        </div>
+    </div>
+</body>
+</html>
+
